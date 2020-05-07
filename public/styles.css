@@ -236,7 +236,7 @@ tbody tr td:first-child span {
   background-size: cover;
   border-radius: 50%;
   box-shadow: 3px 1px 6px -4px black;
-  border: 2px solid white;
+  border: 2px solid var(--primary-color);
 }
 
 tbody tr td:last-child a,
@@ -289,6 +289,35 @@ td:last-child {
 
 .table-container .header form button {
   margin: 0;
+}
+
+/* Pagination */
+.table-container {
+  display: grid;
+  grid-template: 64px 1fr 16px / 1fr;
+}
+
+.table-container .header {
+  margin: 0;
+  align-self: start;
+}
+
+.table-container .pagination {
+  margin: 0;
+  align-self: end;
+  justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.pagination a:hover {
+  filter: brightness(0.3);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 
