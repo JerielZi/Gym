@@ -9,22 +9,25 @@ module.exports = {
 
     })
   },
+
   create(req, res){
-    return res.render("members/create")
+    Member.instructorsSelectOptions(function(options) {
+      return res.render("members/create", { instructorOptions: options})
+    })
   },
+  
   post(req, res){
     //Estrutura de validação dos dados antes de enviar os dados para a BD
     const keys = Object.keys(req.body)
 
     for(key of keys) {
-      //req.body.key == ""
       if (req.body[key] == "") {
         return res.send('Please, fill all the fields!')
       }
     }
 
     Member.create(req.body, function(member) {
-      return res.redirect(`/members/${member.id}`)
+      return res.redirect(`/members`)
     })
 
   },
@@ -45,8 +48,9 @@ module.exports = {
 
       member.birth = date(member.birth).iso
 
-      return res.render("members/edit", { member })
-
+      Member.instructorsSelectOptions(function(options) {
+        return res.render("members/edit", { member, instructorOptions: options})
+      })
     })
   },
   put(req, res){
