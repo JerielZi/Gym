@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --primary-color: #2448e7a1;
-  --secondary-color: rgba(231, 131, 16, 0.705);
+  --primary-color: #4864E6;
+  --secondary-color: #E3E7FA;
+  --highlight-color: #4CD9F2
 }
 
 * {
@@ -134,7 +135,7 @@ header {
 
 .details .item span {
   padding: 8px 16px;
-  background-color: var(--secondary-color);
+  background-color: var(--highlight-color);
   border-radius: 16px;
   color: #777;
   margin-right: 4px;
@@ -168,7 +169,7 @@ input::placeholder {
 button[type="submit"],
 a.button {
   padding: 8px 32px;
-  background-color: var(--primary-color);
+  background-color: var(--highlight-color);
   color: white;
   border-radius: 8px;
   margin-top: 32px;
@@ -236,12 +237,12 @@ tbody tr td:first-child span {
   background-size: cover;
   border-radius: 50%;
   box-shadow: 3px 1px 6px -4px black;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--highlight-color);
 }
 
 tbody tr td:last-child a,
 .table-container > a {
-  background-color: var(--primary-color);
+  background-color: var(--highlight-color);
   padding: 8px 16px;
   text-transform: uppercase;
   text-decoration: none;
