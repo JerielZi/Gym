@@ -18,15 +18,17 @@ Gym Manager
   <a href="#licença">Licença</a> 
 </h3>
 
-<img src="" width="1200">
+<img src="https://github.com/JerielZi/Gym/blob/master/public/Gym_project.png" width="1200">
 
 ## :information_source: Sobre
 
-Gestão de um ginásio
+An app to help manage both members and instructors in a gym
 
 ## :interrobang: Motivo
 
-Para fins de estudos.
+<p>ProjectGym is a project that has a main objective to helps the instructors and the members of a Gym, allowing the gym to manage both the members and the instructors.</p>
+
+<p>By doing so, the instructors can now know how many member they have to coach and the members can also know how many instructors they have available for each area.</p>
 
 ## :rocket: Tecnologias Utilizadas
 
